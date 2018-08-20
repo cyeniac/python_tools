@@ -1,0 +1,130 @@
+==============================主机名域名IP地址==============================
+主机名:mail.test.cc
+局域网IP地址:10.1.86.132
+外网IP地址:218.249.94.241
+
+
+
+
+
+==============================当前操作系统类型==============================
+Neokylin Linux Security OS %{release_variant}
+6.2/Santiago-x86_64
+Build09/20120927
+
+
+
+
+
+
+==============================当前操作系统内核==============================
+Linux2.6.32-220.el6.x86_64
+
+
+
+
+==============================当前邮件系统版本==============================
+Neoshine Security Mail Server 5.8
+NSmail5.8-x86_64/mipsel64
+Build 104/2015-08-11_15-41-55
+NA
+
+
+
+
+==============================当前磁盘分区情况==============================
+Disk /dev/mapper/VolGroup-lv_root doesn't contain a valid partition table
+Disk /dev/mapper/VolGroup-lv_swap doesn't contain a valid partition table
+
+Disk /dev/sda: 42.9 GB, 42949672960 bytes
+255 heads, 63 sectors/track, 5221 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x000b8b59
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1          64      512000   83  Linux
+Partition 1 does not end on cylinder boundary.
+/dev/sda2              64        5222    41430016   8e  Linux LVM
+
+Disk /dev/mapper/VolGroup-lv_root: 40.3 GB, 40340815872 bytes
+255 heads, 63 sectors/track, 4904 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+
+Disk /dev/mapper/VolGroup-lv_swap: 2080 MB, 2080374784 bytes
+255 heads, 63 sectors/track, 252 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+
+
+
+
+==============================磁盘分区使用情况==============================
+文件系统1：/dev/mapper/VolGroup-lv_root,挂载点为：/,文件系统类型为：ext4,空间总量为：36.98G,已用5.31G,剩余29.79G,空间使用率为14.4%。
+文件系统2：/dev/sda1,挂载点为：/boot,文件系统类型为：ext4,空间总量为：0.47G,已用0.03G,剩余0.42G,空间使用率为6.4%。
+文件系统3：/dev/sr0,挂载点为：/media/NeoKylin_secOSV5U8_x64,文件系统类型为：iso9660,空间总量为：4.07G,已用4.07G,剩余0.0G,空间使用率为100.0%。
+
+
+
+
+
+==============================邮件涉及端口状态==============================
+80 is open
+443 is open
+25 is open
+465 is open
+143 is open
+993 is open
+110 is open
+995 is open
+587 is open
+
+
+
+
+
+==============================主要服务运行状态==============================
+dovecot (pid  64611) 正在运行...
+pysieved (pid  64624) 正在运行...
+httpd (pid  64664) 正在运行...
+master (pid 64745) 正在运行...
+mysqld (pid  64937) 正在运行...
+memcached (pid  64963) 正在运行...
+policyd(sender_throttle) (pid  64997) 正在运行...
+logmonitor.pl (pid 1839) 正在运行...
+Usage: /etc/init.d/antispam {start|stop|restart}
+
+
+
+
+==============================当前系统状态信息==============================
+CPU利用率：0.0%
+内存使用率：66.67%
+1分钟内的平均负载为0.00
+5分钟内的平均负载为0.00
+15分钟内的平均负载为0.00
+该系统已经运行：2天3小时25分钟41秒。
+
+
+
+
+
+==============================近期邮件系统日志==============================
+    日志名称		日志大小
+maillog-20160104	0.21M
+maillog-20151122	0.19M
+maillog-20151121	0.18M
+
+
+
+
+
+

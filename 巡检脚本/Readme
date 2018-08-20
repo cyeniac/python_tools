@@ -1,0 +1,22 @@
+1,check.py所在目录为巡检主目录
+
+2,functions/目录为check.py脚本所涉及函数所在目录，该目录下.pyc文件为调用脚本时所生成编译文件，提高再次运行效率。
+	|
+	|____disk_partiton.py 用于获取磁盘分区，挂载，容量
+	|____get_cpu_rate.py  用于获取cpu利用率
+	|____get_ip_address.py 用于获取内外网IP地址（外网IP由域名获取，需服务器能与外网通信;在check.py中网卡名需要手动填写，默认是eth0。）
+	|____get_loadavg_rate.py 用于获取服务器1分钟，5分钟，15分钟的负载
+	|____get_mem_rate.py 用于获取内存使用率
+	|____get_port_status.py 用于获取端口状态
+	|____get_service_status.py 用于获取服务状态（未完成编写）
+	|____get_uptime.py 用于获取服务器运行时长
+
+
+3，report.txt为巡检过程导出报告
+
+
+请将目录切换到本目录下执行
+
+./check.py -d mail.XXX.com
+或
+./check.py --domain mail.XXX.com

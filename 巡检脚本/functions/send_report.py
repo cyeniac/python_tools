@@ -7,8 +7,8 @@ from email.mime.multipart import MIMEMultipart
 
 mailto_list = ['admin@test.cc']
 mail_host = "127.0.0.1"
-mail_user = "cs2c"
-mail_pass = "Q!w2e3r4t5y6"
+mail_user = "user1"
+mail_pass = "123"
 mail_postfix = "test.cc"
 
 def send_mail(to_list):

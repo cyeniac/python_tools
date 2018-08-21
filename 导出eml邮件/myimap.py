@@ -56,6 +56,8 @@ class MyImap:
         self.logs(info)
         return maildirlist
 
+    #
+
 
 
 user1 = MyImap('10.1.50.64','user1@test.com','q1w2e3r4t5y6')

@@ -56,7 +56,47 @@ class MyImap:
         self.logs(info)
         return maildirlist
 
-    #
+    #获取邮件列表
+    def getmaillist(self,dir):
+        self.dir = dir
+        results, message = self.conn.select(self.dir)
+        # print(message[0].decode('utf-8'))
+        type, data = self.conn.search(None,'ALL')
+        info = 'The total number of {0} is {1}'.format(self.dir,message[0].decode('utf-8'))
+        return data[0].split()
+
+    #获取邮件主题
+    def getsubject(self,msgid):
+        self.msgid = msgid
+        type, content = self.conn.fetch(self.msgid,'(RFC822)')
+        m = email.message_from_bytes(content[0][1])
+        if m.get('subject'):
+            subject = m.get('subject')
+        else:
+            subject = '无主题'
+        decode_h = email.header.decode_header(subject)
+        if decode_h[0][1]:
+            sub = decode_h[0][0].decode(decode_h[0][1],'ignore')
+        else:
+            sub = decode_h[0][0]
+        return sub
+
+    #获取邮件时间
+    def getmaildate(self,msgid):
+        self.msgid = msgid
+        type, content = self.conn.fetch(self.msgid, '(RFC822)')
+        m = email.message_from_bytes(content[0][1])
+        print(m.get('date'))
+
+    #获取邮件eml内容
+    def getemlcontent(self,msgid):
+        self.msgid = msgid
+        type, content = self.conn.fetch(self.msgid, '(RFC822)')
+        m = email.message_from_bytes(content[0][1])
+        return m[0][1]
+
+
+
 
 
 

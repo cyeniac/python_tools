@@ -48,12 +48,16 @@ class MyImap:
     #获取邮箱目录
     def getmaildir2(self):
         list = self.conn.list()
-        maildirlist = []
+        maildirlist = {}
         for dir in list[1]:
-            dir = imap_utf7.decode(dir).split('"')[3].strip()
-            maildirlist.append(dir)
+            encode_dir = dir.decode('utf-8').split('"')[3].strip()
+            # print(encode_dir)
+            decode_dir = imap_utf7.decode(dir).split('"')[3].strip()
+            # print(decode_dir)
+            maildirlist[encode_dir] = decode_dir
         info = 'User {0} has {1}'.format(self.username, (",".join(maildirlist)))
         self.logs(info)
+        # print(maildirlist)
         return maildirlist
 
     #获取邮件列表
@@ -102,5 +106,5 @@ class MyImap:
 
 user1 = MyImap('10.1.50.64','user1@test.com','q1w2e3r4t5y6')
 user1.login()
-
+user1.getmaildir2()
 user1.logout()

@@ -1,3 +1,11 @@
+
+"""
+Author:Yang Chen
+Department:Secure Mail Business Department
+
+
+"""
+
 import os
 import smtplib
 import time
